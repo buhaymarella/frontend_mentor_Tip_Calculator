@@ -23,6 +23,7 @@
 /* Main */
 body{
     background-color: var(--Light-grayish-cyan);
+
 }
 header .header h2{
     text-align: center;
@@ -42,7 +43,7 @@ main .container{
     gap: 1rem;
     padding: 2.5rem 1.5rem;
     border-radius: 8px;
-    width: 120vh;
+    width: 800px;
 }
 .tip-percent{
     margin-bottom: 1rem;
