@@ -1,0 +1,152 @@
+/* Main Font URL*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    /*Colors*/
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+
+    /*Font*/
+    --font-inputs: 24px;
+    --font-weight: 700;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+/* Main */
+body{
+    background-color: var(--Light-grayish-cyan);
+}
+header .header h2{
+    text-align: center;
+    color: var(--Very-dark-cyan);
+    letter-spacing: .3rem;
+    line-height: 2rem;
+    margin: 3%;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+main .container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--White);
+    gap: 1rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 8px;
+    width: 120vh;
+}
+.tip-percent{
+    margin-bottom: 1rem;
+}
+.tip-percent-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: .5rem;
+    margin-top: .5rem;
+}
+.tip-percent-container button,
+.reset{
+    background-color: var(--Very-dark-cyan);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .5rem;
+    font-size: 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: white;
+}
+.tip-percent-container button:focus,
+.reset{
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}
+.tip-percent-container button:nth-child(6){
+    background-color: var(--Very-light-grayish-cyan);
+    color: var(--Dark-grayish-cyan);
+}
+.reset{
+    width: 100%;
+    text-transform: uppercase;
+}
+main .container label{
+    color: var(--Grayish-cyan);
+}
+main .container .bill{
+    width: 100%;
+}
+span img{
+    position: absolute;
+    padding: 1rem;
+}
+main .container .bill-container, .num-people, .custom-val{
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    outline: none;
+    padding: .3rem 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+main .container input:focus{
+    border: 2px solid var(--Strong-cyan);
+}
+main .container input[type=number]{
+    color: var(--Very-dark-cyan);
+    font-weight: bold;
+    font-size: 24px;
+    text-align: end;
+    
+}
+main .container input::placeholder{
+    color: var(--Grayish-cyan);
+}
+main .container .total-amount{
+    width: 100%;
+    background-color: var(--Very-dark-cyan);
+    padding: 2rem 1rem;
+    font-weight: 400;
+    color: var(--White);
+    border-radius: 8px;
+}
+.reset-container{
+    margin-top: 6.5rem;
+}
+.reset:hover{
+    background-color: var(--Light-grayish-cyan);
+}
+.per-person{
+    color: var(--Dark-grayish-cyan);
+}
+.tip-amount, .total{
+    display: flex;
+    justify-content: space-between;
+}
+.tip-amount h1, .total h1{
+    color: var(--Strong-cyan);
+}
+@media screen and (max-width: 490px) {
+    main .container{
+        flex-wrap: wrap;
+    }
+    .reset{
+        margin-top: 0;
+    }
+}
+
+/* Footer */
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
